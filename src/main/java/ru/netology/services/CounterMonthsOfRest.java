@@ -11,6 +11,7 @@ public class CounterMonthsOfRest {
             } else {
                 count = count + 1;
                 money = money - threshold;
+                money = Math.round(money / 3);
             }
         }
         return count;
